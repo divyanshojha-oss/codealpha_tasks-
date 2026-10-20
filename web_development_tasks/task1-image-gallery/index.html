@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlight | Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">Wander<span>light</span></a>
+    <p>A little collection of places worth dreaming about.</p>
+  </header>
+  <main class="container">
+    <section class="intro">
+      <p class="eyebrow">THE VISUAL JOURNAL</p>
+      <h1>Find your <em>somewhere.</em></h1>
+      <p class="subtext">A gallery of quiet corners, wild landscapes, and golden-hour moments.</p>
+    </section>
+    <nav class="filters" aria-label="Filter gallery">
+      <button class="filter active" data-filter="all">All photos</button>
+      <button class="filter" data-filter="nature">Nature</button>
+      <button class="filter" data-filter="city">City</button>
+      <button class="filter" data-filter="ocean">Ocean</button>
+    </nav>
+    <section class="gallery" id="gallery" aria-label="Photo gallery">
+      <button class="photo-card" data-category="nature" data-index="0" aria-label="Open mountain photo">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Mountain peaks under a clear sky">
+        <span class="photo-caption"><b>Into the wild</b><small>Nature · 01</small></span>
+      </button>
+      <button class="photo-card" data-category="ocean" data-index="1" aria-label="Open ocean photo">
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=85" alt="Ocean waves rolling toward the shore">
+        <span class="photo-caption"><b>Blue state of mind</b><small>Ocean · 02</small></span>
+      </button>
+      <button class="photo-card" data-category="city" data-index="2" aria-label="Open city photo">
+        <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85" alt="City skyline glowing at night">
+        <span class="photo-caption"><b>After hours</b><small>City · 03</small></span>
+      </button>
+      <button class="photo-card" data-category="nature" data-index="3" aria-label="Open forest photo">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85" alt="Sunlight filtering through a forest">
+        <span class="photo-caption"><b>Where light falls</b><small>Nature · 04</small></span>
+      </button>
+      <button class="photo-card" data-category="ocean" data-index="4" aria-label="Open coastal photo">
+        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=900&q=85" alt="Deep blue sea with rolling waves">
+        <span class="photo-caption"><b>Salt in the air</b><small>Ocean · 05</small></span>
+      </button>
+      <button class="photo-card" data-category="city" data-index="5" aria-label="Open architecture photo">
+        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=85" alt="Modern architecture against the sky">
+        <span class="photo-caption"><b>Lines & light</b><small>City · 06</small></span>
+      </button>
+    </section>
+  </main>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="close" aria-label="Close lightbox">×</button>
+    <button class="nav prev" id="prev" aria-label="Previous image">‹</button>
+    <figure><img id="lightbox-image" src="" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
+    <button class="nav next" id="next" aria-label="Next image">›</button>
+    <p class="hint">Use ← → keys to navigate · Esc to close</p>
+  </div>
+  <footer>Made with curiosity <span>✳</span> Wanderlight Gallery</footer>
+  <script src="script.js"></script>
+</body>
+</html>
